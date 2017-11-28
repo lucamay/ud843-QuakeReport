@@ -4,7 +4,7 @@ package com.example.android.quakereport;
  * Created by LUPECASA on 26/11/2017.
  */
 public class Earthquake {
-    private String tamanio;
+    private String magnitud;
 
     private String lugar;
 
@@ -13,16 +13,14 @@ public class Earthquake {
     /*
     * Create a new Earthquake object.
     * */
-    public Earthquake(String vTamanio, String vLugar, String vFecha)
+    public Earthquake(String vMagnitud, String vLugar, String vFecha)
     {
-        tamanio = vTamanio;
+        magnitud = vMagnitud;
         lugar = vLugar;
         fecha = vFecha;
     }
 
-    public String getTamanio() {
-        return tamanio;
-    }
+    public String getMagnitud() {return magnitud; }
 
     public String getLugar() {
         return lugar;

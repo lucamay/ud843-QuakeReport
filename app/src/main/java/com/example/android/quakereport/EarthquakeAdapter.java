@@ -30,8 +30,8 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
 
         Earthquake currentAndroidFlavor = getItem(position);
 
-        TextView tamanioTextView = (TextView) listItemView.findViewById(R.id.tamanio);
-        tamanioTextView.setText(currentAndroidFlavor.getTamanio());
+        TextView magnitudTextView = (TextView) listItemView.findViewById(R.id.magnitud);
+        magnitudTextView.setText(currentAndroidFlavor.getMagnitud());
 
         TextView lugarTextView = (TextView) listItemView.findViewById(R.id.lugar);
         lugarTextView.setText(currentAndroidFlavor.getLugar());
